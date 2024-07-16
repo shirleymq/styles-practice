@@ -16,7 +16,13 @@ body {
   margin: auto;
   padding: 40px 0;
 
-  display: flex;
+  /**Flexbox*/
+  /**display: flex;
+  gap: 20px;*/
+
+  /**Grid*/
+  display: grid;
+  grid-template-columns: 3fr 1fr;
   gap: 20px;
 }
 
@@ -26,10 +32,15 @@ body {
 }
 
 .contenedor-conciertos {
-  width: 70%;
-
+  /**Flexbox*/
+  /*width: 70%;
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;*/
+
+  /**Grid*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
@@ -43,15 +54,21 @@ body {
   background-size: cover;
   background-position: center center;
 
-  width: calc(33.33% - 20px);
+  /**Flexbox*/
+  /*width: calc(33.33% - 20px);*/
 }
 
 .card .textos {
   height: 100%;
 
-  display: flex;
+  /**Flexbox*/
+  /*display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between;*/
+
+  /**Grid*/
+  display: grid;
+  grid-template-rows: 1fr auto;
 }
 
 .banner {
@@ -61,10 +78,16 @@ body {
   background-size: cover;
   background-position: center center;
 
-  width: 30%;
+  /**Flexbox*/
+  /**width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-between;*/
+
+  /**Grid*/
+  display: grid;
+  grid-template-rows: auto auto auto;
+  align-items: center;
 }
 
 .banner ul {
