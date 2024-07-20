@@ -9,7 +9,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  /**align-items: center;*/
 }
 
 .contenedor {
@@ -152,6 +152,10 @@ body {
 }
 
 /**SCROLL SLIDER*/
+.container-slider-x {
+  max-width: 600px;
+  margin: 0 auto;
+}
 .slider {
   display: flex;
   max-width: 500px;
@@ -197,7 +201,7 @@ h2 {
   view-timeline-axis: block;
   animation-timeline: --image;
   animation-name: show;
-  animation-range: entry 25% cover 30%;
+  animation-range: entry 25% cover 50%;
   animation-fill-mode: both;
 }
 
@@ -210,4 +214,74 @@ h2 {
     opacity: 1;
     scale: 100%;
   }
+}
+
+/**Position*/
+.container-position {
+  margin: 30vh auto;
+  border: 5px solid black;
+  width: 310px;
+
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.cabecera {
+  background-color: black;
+  color: white;
+  padding: 2em 0;
+
+  position: fixed; /**pierde su espacio y su sitio, 
+  se sale del flujo*/
+  top: 0;
+  width: 100%;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  color: white;
+}
+
+.box-1 {
+  background-color: #ff6961;
+  position: absolute; /**deja un vacio, como si flotara*/
+  top: 20px;
+  left: 260px;
+  bottom: ;
+  right: ;
+  z-index: -1; /**pone el elemento detras de su contenedor padre*/
+}
+
+.box-2 {
+  background-color: #77dd77;
+  position: static; /**positio por defecto, no permite mover al elemento*/
+}
+
+.box-3 {
+  background-color: #e79eff;
+  position: relative;
+  top: 20px;
+  left: 30px;
+  bottom: ;
+  right: ;
+  z-index: 10; /**pone al elemento delante de otro, 
+  si hay otro elemento con un z-index mayor, 
+  ese se pone adelante*/
+}
+
+.box-4 {
+  background-color: #84b6f4;
+  position: relative; /**pone al elemento delante de otro 
+  que no tenga una position*/
+}
+
+.box-5 {
+  background-color: #ee7f41;
+}
+
+.box-6 {
+  background-color: #5e704a;
 }
