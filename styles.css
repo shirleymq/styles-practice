@@ -9,6 +9,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: 6em;
   /**align-items: center;*/
 }
 
@@ -233,9 +234,12 @@ h2 {
   padding: 2em 0;
 
   position: fixed; /**pierde su espacio y su sitio, 
-  se sale del flujo*/
+  se sale del flujo, aunque este dentro de un contenedor posicionado
+  este elemento con position fixed se ubicara respecto a la etiqueta html
+  y no a su contenedor padre*/
   top: 0;
   width: 100%;
+  text-align: center;
 }
 .box {
   width: 100px;
@@ -247,7 +251,9 @@ h2 {
 
 .box-1 {
   background-color: #ff6961;
-  position: absolute; /**deja un vacio, como si flotara*/
+  position: absolute; /**deja un vacio, como si flotara, 
+  si tiene un contenedor padre posicionado relative, 
+  se posiciona respecto a este*/
   top: 20px;
   left: 260px;
   bottom: ;
