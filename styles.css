@@ -228,7 +228,7 @@ h2 {
   position: relative;
 }
 
-.cabecera {
+.cabecera-fixed {
   background-color: black;
   color: white;
   padding: 2em 0;
@@ -238,6 +238,17 @@ h2 {
   este elemento con position fixed se ubicara respecto a la etiqueta html
   y no a su contenedor padre*/
   top: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.cabecera-sticky {
+  background-color: rgb(13, 3, 104);
+  color: white;
+  padding: 2em 0;
+
+  position: sticky; /** se mantiene fijo cuando alcanze la x posicion que le des*/
+  top: 120px;
   width: 100%;
   text-align: center;
 }
