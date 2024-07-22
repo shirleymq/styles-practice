@@ -1,6 +1,29 @@
 #tiutlo {
   color: tomato;
 }
+
 .texto {
   color: green;
+}
+
+p.texto {
+  color: slateblue;
+}
+
+p.especial {
+  color: mediumseagreen;
+}
+
+div p {
+  color: aquamarine;
+}
+
+div h2,
+div h3 {
+  color: brown;
+}
+
+* {
+  font-size: 24px;
+  color: black;
 }
