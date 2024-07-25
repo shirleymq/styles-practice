@@ -35,7 +35,41 @@ div h3 {
   */
 
 /*RGB*/
-
+/**
 .color {
   color: rgb(0, 0, 255);
+}
+*/
+.color {
+  /* border: 3px #0bf outset; */
+  /*
+  dotted
+  dashed
+  solid
+  double
+  //elementos tridimensionales
+  groove
+  ridge
+  inset
+  outset
+  none
+  hidden
+  */
+  border-style: solid;
+  border-color: blue;
+  border-radius: 5px;
+  border-width: 3px;
+}
+
+#fondo {
+  background-color: rgba(255, 0, 0);
+  /* opacity: 0.3; */
+  height: 200px;
+  /* 
+  background-image: url("img/maquina.jpg");
+  background-repeat: repeat-y;
+  background-position: center top; */
+
+  background: #f00 url("img/maquina.jpg") repeat-y center bottom / 100px 100px;
+  /* background-size: 100px 100px; debe ir despues de background */
 }
