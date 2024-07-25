@@ -73,3 +73,8 @@ div h3 {
   background: #f00 url("img/maquina.jpg") repeat-y center bottom / 100px 100px;
   /* background-size: 100px 100px; debe ir despues de background */
 }
+
+.margen {
+  background-color: chocolate;
+  margin: 15px 20px 25px 30px;
+}
