@@ -86,7 +86,8 @@ div h3 {
 }
 
 .texto2 {
+  font-family: "Roboto", sans-serif;
   text-align: justify;
-  text-decoration: line-through;
+  text-decoration: overline;
   text-shadow: 3px 5px 5px blue;
 }
